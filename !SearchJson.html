@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How do microorganisms work?</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/randomcolor@0.5.4/randomColor.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f9;
+        }
+        canvas {
+            width: 90%;
+            height: 80%;
+        }
+        #searchBox {
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="searchBox" placeholder="Search by category or keyword" onkeyup="searchCategory()" />
+    <canvas id="bubbleChart"></canvas>
+
+    <script>
+        let categoryData = []; // JSON 데이터를 저장할 변수
+        let geneCounts = []; // Gene Count 데이터를 저장할 변수
+        let categoryInfo = []; // 카테고리 정보를 저장할 변수
+
+        // JSON 파일 로드 (fetch API 사용, 헤더에 토큰 포함)
+        const jsonFilePath = "https://raw.githubusercontent.com/Cuooz/iModulon/main/category_data.json";        
+        fetch(jsonFilePath, {
+            method: 'GET',
+            headers: {
+                'Authorization': 'Bearer GHSAT0AAAAAAC4CMKKLXCN5IIPU55RAOBLSZ3COPPQ' // 토큰을 헤더에 포함
+            }
+        })
+        .then(response => response.json())
+        .then(data => {
+            categoryData = data;
+            geneCounts = categoryData.map(item => item.GeneCount);
+            categoryInfo = categoryData.map(item => ({
+                No: item.No,
+                Name: item.Name,
+                Function: item.Function,
+                Gene: item.Gene,
+                Protein: item.Protein,
+                GOG: item.GOG,
+                GeneLocus: item.GeneLocus
+            }));
+
+            // 차트 초기화
+            createChart();
+        })
+        .catch(error => console.error("Error loading JSON file:", error));
+
+        // 차트 생성 함수
+        function createChart() {
+            const ctx = document.getElementById('bubbleChart').getContext('2d');
+            const bubbleChart = new Chart(ctx, {
+                type: 'bubble',
+                data: {
+                    datasets: [{
+                        label: 'Gene Categories',
+                        data: geneCounts.map((count, index) => ({
+                            x: index,
+                            y: count,
+                            r: Math.min(count, 15)
+                        })),
+                        backgroundColor: geneCounts.map(() => randomColor()),
+                        borderColor: geneCounts.map(() => 'rgba(0, 0, 0, 0)'),
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    scales: {
+                        x: { title: { display: true, text: 'Category Index' } },
+                        y: { title: { display: true, text: 'Gene Count' }, beginAtZero: true }
+                    },
+                    plugins: {
+                        title: { display: true, text: 'How E. coli Work?' },
+                        tooltip: {
+                            callbacks: {
+                                label: function(tooltipItem) {
+                                    const categoryIndex = tooltipItem.raw.x;
+                                    const geneCount = tooltipItem.raw.y;
+                                    return `Category: ${categoryIndex}, Gene Count: ${geneCount}`;
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+
+            // 클릭 이벤트 리스너 추가
+            document.getElementById('bubbleChart').onclick = function(evt) {
+                const activePoints = bubbleChart.getElementsAtEventForMode(evt, 'nearest', { intersect: true }, false);
+                if (activePoints.length > 0) {
+                    const clickedIndex = activePoints[0].index;
+                    const selectedCategory = categoryInfo[clickedIndex];
+
+                    // 해당 카테고리에 해당하는 모든 정보 필터링
+                    const filteredData = categoryData.filter(item => item.No === selectedCategory.No);
+
+                    // 새 탭을 열어서 해당 카테고리 정보 표시
+                    const newTab = window.open("", "_blank");
+                    newTab.document.write(`
+                        <html>
+                            <head><title>Category Information</title></head>
+                            <body>
+                                <h2>${selectedCategory.Name}</h2>
+                                <p><strong>Function:</strong> ${selectedCategory.Function}</p>
+                                <p><strong>Gene:</strong> ${selectedCategory.Gene}</p>
+                                <p><strong>Protein:</strong> ${selectedCategory.Protein}</p>
+                                <p><strong>GOG:</strong> ${selectedCategory.GOG}</p>
+                                <p><strong>Gene Locus:</strong> ${selectedCategory.GeneLocus}</p>
+                                <p><strong>Related Entries:</strong></p>
+                                <ul>
+                                    ${filteredData.map(item => `
+                                        <li>
+                                            <strong>Gene:</strong> ${item.Gene}<br>
+                                            <strong>Protein:</strong> ${item.Protein}<br>
+                                            <strong>GOG:</strong> ${item.GOG}<br>
+                                        </li>
+                                    `).join('')}
+                                </ul>
+                            </body>
+                        </html>
+                    `);
+                }
+            };
+        }
+
+        // 검색 기능 추가
+        function searchCategory() {
+            const searchQuery = document.getElementById('searchBox').value.toLowerCase();
+            const filteredIndexes = categoryData
+                .map((item, index) => {
+                    if (item.Name.toLowerCase().includes(searchQuery) || item.Function.toLowerCase().includes(searchQuery) || item.Gene.toLowerCase().includes(searchQuery)) {
+                        return index;
+                    }
+                    return -1;
+                })
+                .filter(index => index !== -1);
+
+            // 버블 차트의 데이터를 필터링하여 업데이트
+            const bubbleChart = Chart.instances[0];
+            bubbleChart.data.datasets[0].data = filteredIndexes.map(index => ({
+                x: index,
+                y: geneCounts[index],
+                r: Math.min(geneCounts[index], 15)
+            }));
+
+            bubbleChart.update();
+        }
+    </script>
+</body>
+</html>
