@@ -1,0 +1,1409 @@
+[
+ {
+   "CategoryID": 0,
+   "Name": "Sugar Diacid",
+   "Function": "Transport and catabolism of carbohydrate diacids (galacatarate and glucarate)",
+   "Regulator": "CdaR",
+   "GeneCount": 14
+ },
+ {
+   "CategoryID": 1,
+   "Name": "Translation",
+   "Function": "Ribosome biogenesis",
+   "Regulator": "DksA",
+   "GeneCount": 53
+ },
+ {
+   "CategoryID": 2,
+   "Name": "ygdT",
+   "Function": "Unknown",
+   "Regulator": "Unknown",
+   "GeneCount": 3
+ },
+ {
+   "CategoryID": 3,
+   "Name": "OxyR",
+   "Function": "Oxidative stress response, especially peroxide",
+   "Regulator": "OxyR",
+   "GeneCount": 38
+ },
+ {
+   "CategoryID": 4,
+   "Name": "FlhDC-2",
+   "Function": "Flagellum biosynthesis and export",
+   "Regulator": "FlhDC",
+   "GeneCount": 43
+ },
+ {
+   "CategoryID": 5,
+   "Name": "Osmoprotectant",
+   "Function": "Transport of osmoprotectant glycine betaine",
+   "Regulator": "RpoS and ppGpp and IHF and H-NS",
+   "GeneCount": 4
+ },
+ {
+   "CategoryID": 6,
+   "Name": "Glutamine",
+   "Function": "Glutamine transport and synthesis",
+   "Regulator": "NtrC",
+   "GeneCount": 9
+ },
+ {
+   "CategoryID": 7,
+   "Name": "Sialic Acid",
+   "Function": "N-acetyl-neuraminic acid (or sialic acid) transport and metabolism",
+   "Regulator": "Crp and NanR",
+   "GeneCount": 13
+ },
+ {
+   "CategoryID": 8,
+   "Name": "yqhI",
+   "Function": "Unknown",
+   "Regulator": "Unknown",
+   "GeneCount": 2
+ },
+ {
+   "CategoryID": 9,
+   "Name": "ROS TALE Amp",
+   "Function": "Amplification of DLP12/IS3",
+   "Regulator": "Unknown",
+   "GeneCount": 9
+ },
+ {
+   "CategoryID": 10,
+   "Name": "Nucleotide Stress",
+   "Function": "DNA repair; stringent response signaling via ppGpp; ribosomal biogenesis and stability",
+   "Regulator": "Unknown",
+   "GeneCount": 15
+ },
+ {
+   "CategoryID": 11,
+   "Name": "Histidine",
+   "Function": "Histidine biosynthesis",
+   "Regulator": "His-tRNA and DksA",
+   "GeneCount": 9
+ },
+ {
+   "CategoryID": 12,
+   "Name": "UC-4",
+   "Function": "Unknown",
+   "Regulator": "Unknown",
+   "GeneCount": 39
+ },
+ {
+   "CategoryID": 13,
+   "Name": "RpoH",
+   "Function": "Global heat shock response during log-phase; response to high temperature and/or misfolded proteins",
+   "Regulator": "RpoH",
+   "GeneCount": 41
+ },
+ {
+   "CategoryID": 14,
+   "Name": "FucR/AllR/AraC",
+   "Function": "Allantoin/glycolate/glyoxylate/arabinose/fucose transport and catabolism",
+   "Regulator": "FucR or AllR or AraC",
+   "GeneCount": 20
+ },
+ {
+   "CategoryID": 15,
+   "Name": "ldrC",
+   "Function": "Unknown",
+   "Regulator": "Unknown",
+   "GeneCount": 1
+ },
+ {
+   "CategoryID": 16,
+   "Name": "Ferric Citrate",
+   "Function": "Ferric citrate transporter; iron uptake under intracellular limitation",
+   "Regulator": "PdhR and HypT and Nac and Crp and Fur and FecI",
+   "GeneCount": 7
+ },
+ {
+   "CategoryID": 17,
+   "Name": "Zinc-1",
+   "Function": "Zinc sensing and uptake; copper sensing and export",
+   "Regulator": "Zur or ZntR or CueR",
+   "GeneCount": 14
+ },
+ {
+   "CategoryID": 18,
+   "Name": "Methionine",
+   "Function": "Methionine transport and biosynthesis",
+   "Regulator": "MetJ",
+   "GeneCount": 21
+ },
+ {
+   "CategoryID": 19,
+   "Name": "Sorbitol",
+   "Function": "Sorbitol transport and catabolism",
+   "Regulator": "SrlR and GutM and Crp and H-NS",
+   "GeneCount": 6
+ },
+ {
+   "CategoryID": 20,
+   "Name": "Glycerol",
+   "Function": "Glycerol/glycerol-3-phosphate transport and catabolism",
+   "Regulator": "Crp and GlpR",
+   "GeneCount": 11
+ },
+ {
+   "CategoryID": 21,
+   "Name": "Nucleoside",
+   "Function": "Transport and utilization of ribonucleosides and deoxyribonucleosides",
+   "Regulator": "Crp and CytR",
+   "GeneCount": 11
+ },
+ {
+   "CategoryID": 22,
+   "Name": "SoxS",
+   "Function": "Superoxide/nitric oxide sensing and removal, protection from organic solvents and antibiotics",
+   "Regulator": "SoxS",
+   "GeneCount": 117
+ },
+ {
+   "CategoryID": 23,
+   "Name": "thrA KO",
+   "Function": "thrA KO and compensatory transcriptional changes",
+   "Regulator": "Unknown",
+   "GeneCount": 5
+ },
+ {
+   "CategoryID": 24,
+   "Name": "YjfJ",
+   "Function": "Putative heat responsive regulon",
+   "Regulator": "YjfJ",
+   "GeneCount": 4
+ },
+ {
+   "CategoryID": 25,
+   "Name": "Lrp",
+   "Function": "Global regulation of amino acid biosynthesis/catabolism, stationary phase, nutrient transport, pili synthesis, 1-carbon metabolism",
+   "Regulator": "Lrp",
+   "GeneCount": 42
+ },
+ {
+   "CategoryID": 26,
+   "Name": "baeR KO",
+   "Function": "baeR KO",
+   "Regulator": "Unknown",
+   "GeneCount": 54
+ },
+ {
+   "CategoryID": 27,
+   "Name": "ydaG",
+   "Function": "Unknown",
+   "Regulator": "Unknown",
+   "GeneCount": 4
+ },
+ {
+   "CategoryID": 28,
+   "Name": "ldrA",
+   "Function": "Unknown",
+   "Regulator": "Unknown",
+   "GeneCount": 1
+ },
+ {
+   "CategoryID": 29,
+   "Name": "Quorum Sensing",
+   "Function": "Quorum sensing via autoinducer 2, biofilm architecture, foreign DNA stress response; lsrR KO",
+   "Regulator": "Crp and LsrR",
+   "GeneCount": 10
+ },
+ {
+   "CategoryID": 30,
+   "Name": "IS Elements-2",
+   "Function": "Unknown",
+   "Regulator": "Unknown",
+   "GeneCount": 49
+ },
+ {
+   "CategoryID": 31,
+   "Name": "Nickel",
+   "Function": "Nickel sensing and uptake",
+   "Regulator": "RpoN and NarL and NikR and Fnr",
+   "GeneCount": 5
+ },
+ {
+   "CategoryID": 32,
+   "Name": "CpxR",
+   "Function": "Inner membrane damage sensing and repair via protein folding/degradation, chemotaxis, drug efflux, DNA repair, motility",
+   "Regulator": "CpxR",
+   "GeneCount": 53
+ },
+ {
+   "CategoryID": 33,
+   "Name": "Curli-2",
+   "Function": "Curli secretion and assembly",
+   "Regulator": "RpoS and FliZ and CpxR and CsgD and BtsR",
+   "GeneCount": 5
+ },
+ {
+   "CategoryID": 34,
+   "Name": "Acid Shock RNA",
+   "Function": "Very low pH-responsive acid shock polypeptide",
+   "Regulator": "Unknown",
+   "GeneCount": 3
+ },
+ {
+   "CategoryID": 35,
+   "Name": "FucR/ExuR",
+   "Function": "Fucose/galacturonate/glucuronate transport and catabolism",
+   "Regulator": "FucR or ExuR",
+   "GeneCount": 14
+ },
+ {
+   "CategoryID": 36,
+   "Name": "cydB/appC KO",
+   "Function": "cydB/appC KO and compensatory regulatory changes",
+   "Regulator": "Unknown",
+   "GeneCount": 11
+ },
+ {
+   "CategoryID": 37,
+   "Name": "ymdG",
+   "Function": "Unknown",
+   "Regulator": "Unknown",
+   "GeneCount": 1
+ },
+ {
+   "CategoryID": 38,
+   "Name": "EvgA",
+   "Function": "Glutamate-dependent acid response, drug resistance, alkali metals response",
+   "Regulator": "EvgA",
+   "GeneCount": 15
+ },
+ {
+   "CategoryID": 39,
+   "Name": "Xylose",
+   "Function": "d-Xylose transport and catabolism",
+   "Regulator": "Crp and XylR",
+   "GeneCount": 15
+ },
+ {
+   "CategoryID": 40,
+   "Name": "IS1",
+   "Function": "IS1 transcripts",
+   "Regulator": "Unknown",
+   "GeneCount": 9
+ },
+ {
+   "CategoryID": 41,
+   "Name": "pgi KO",
+   "Function": "pgi KO",
+   "Regulator": "Unknown",
+   "GeneCount": 4
+ },
+ {
+   "CategoryID": 42,
+   "Name": "Biotin",
+   "Function": "Biotin biosynthesis",
+   "Regulator": "BirA",
+   "GeneCount": 8
+ },
+ {
+   "CategoryID": 43,
+   "Name": "N Reduction",
+   "Function": "Electron transfer via nitrate reductases (periplasmic and A), cytochrome c",
+   "Regulator": "FlhDC and ModE and NarP and NarL and Fnr",
+   "GeneCount": 24
+ },
+ {
+   "CategoryID": 44,
+   "Name": "FDH-N/NRA",
+   "Function": "Anaerobic growth on nitrate; formate-to-nitrate electron transfer via formate dehydrogenase N and nitrate reductase A",
+   "Regulator": "NarL and Fnr",
+   "GeneCount": 15
+ },
+ {
+   "CategoryID": 45,
+   "Name": "Resistance",
+   "Function": "Multidrug resistance; stress response to harmful compounds/antibiotics",
+   "Regulator": "Unknown",
+   "GeneCount": 58
+ },
+ {
+   "CategoryID": 46,
+   "Name": "PAL 10 Del",
+   "Function": "Unknown",
+   "Regulator": "Unknown",
+   "GeneCount": 108
+ },
+ {
+   "CategoryID": 47,
+   "Name": "Biofilm",
+   "Function": "Biofilm formation, acid resistance, cold shock response",
+   "Regulator": "RpoS and ppGpp and BluR and MarA",
+   "GeneCount": 5
+ },
+ {
+   "CategoryID": 48,
+   "Name": "Cytochrome c",
+   "Function": "Cytochrome c-552 and putative cytochrome c-related proteins",
+   "Regulator": "FlhDC and IHF and NsrR and NarL and NarP and Fis and Fnr",
+   "GeneCount": 6
+ },
+ {
+   "CategoryID": 49,
+   "Name": "BasR",
+   "Function": "Lipid A modification and polymixin resistance in the presence of excess iron",
+   "Regulator": "BasR",
+   "GeneCount": 15
+ },
+ {
+   "CategoryID": 50,
+   "Name": "Sulfoquinovose",
+   "Function": "Sulfoquinovose transport and catabolism",
+   "Regulator": "CsqR",
+   "GeneCount": 10
+ },
+ {
+   "CategoryID": 51,
+   "Name": "RpoS",
+   "Function": "Master regulator of global stress response",
+   "Regulator": "RpoS",
+   "GeneCount": 122
+ },
+ {
+   "CategoryID": 52,
+   "Name": "lsrB KO",
+   "Function": "lsrB KO and compensatory regulatory changes",
+   "Regulator": "Unknown",
+   "GeneCount": 8
+ },
+ {
+   "CategoryID": 53,
+   "Name": "UC-1",
+   "Function": "Unknown",
+   "Regulator": "Unknown",
+   "GeneCount": 27
+ },
+ {
+   "CategoryID": 54,
+   "Name": "Fur-1",
+   "Function": "Iron sensing and uptake, enterobactin biosynthesis, iron-sulfur cluster activation, iron sequestration",
+   "Regulator": "Fur",
+   "GeneCount": 32
+ },
+ {
+   "CategoryID": 55,
+   "Name": "ykgR",
+   "Function": "Unknown",
+   "Regulator": "Unknown",
+   "GeneCount": 1
+ },
+ {
+   "CategoryID": 56,
+   "Name": "Sulfate",
+   "Function": "Cysteine transport and biosynthesis; aliphatic sulfonate utilization and homeostatic response to sulfate starvation",
+   "Regulator": "Cbl and CysB",
+   "GeneCount": 17
+ },
+ {
+   "CategoryID": 57,
+   "Name": "ypaB",
+   "Function": "Unknown",
+   "Regulator": "Unknown",
+   "GeneCount": 1
+ },
+ {
+   "CategoryID": 58,
+   "Name": "Fur-2",
+   "Function": "Iron sensing and uptake, enterobactin biosynthesis, iron-sulfur cluster activation, iron sequestration",
+   "Regulator": "Fur",
+   "GeneCount": 44
+ },
+ {
+   "CategoryID": 59,
+   "Name": "Magnesium",
+   "Function": "Magnesium sensing and transport; magnesium-limitation response",
+   "Regulator": "PhoP",
+   "GeneCount": 21
+ },
+ {
+   "CategoryID": 60,
+   "Name": "Nitrate/Nitrite",
+   "Function": "Nitrate/nitrite transport and reduction",
+   "Regulator": "NarL and Fnr",
+   "GeneCount": 9
+ },
+ {
+   "CategoryID": 61,
+   "Name": "glrR KO",
+   "Function": "glrR (aka qseF) KO; xylose transport and catabolism",
+   "Regulator": "Unknown",
+   "GeneCount": 7
+ },
+ {
+   "CategoryID": 62,
+   "Name": "Fnr-1",
+   "Function": "Transition from aerobic to anaerobic growth; anaerobic reductase and hydrogenase activity",
+   "Regulator": "Fnr",
+   "GeneCount": 46
+ },
+ {
+   "CategoryID": 63,
+   "Name": "Pyrimidine",
+   "Function": "Pyrimidine transport and biosynthesis",
+   "Regulator": "PurR or UTP",
+   "GeneCount": 13
+ },
+ {
+   "CategoryID": 64,
+   "Name": "Zinc-2",
+   "Function": "Tolerance to high zinc concentration",
+   "Regulator": "ZraR",
+   "GeneCount": 1
+ },
+ {
+   "CategoryID": 65,
+   "Name": "NRZ",
+   "Function": "Nitrate reduction under microaerobic condition; aerobic to anaerobic transition",
+   "Regulator": "OmpR",
+   "GeneCount": 6
+ },
+ {
+   "CategoryID": 66,
+   "Name": "nquinone ALE 3",
+   "Function": "ubiC KO and associated adaptive regulatory changes",
+   "Regulator": "Unknown",
+   "GeneCount": 26
+ },
+ {
+   "CategoryID": 67,
+   "Name": "RpoE",
+   "Function": "Heat shock response; response to high temperature and/or misfolded membrane/periplasmic proteins",
+   "Regulator": "RpoE",
+   "GeneCount": 13
+ },
+ {
+   "CategoryID": 68,
+   "Name": "Cellulose",
+   "Function": "Cellulose biosynthesis; biofilm formation; membrane/periplasmic proteins",
+   "Regulator": "Unknown",
+   "GeneCount": 95
+ },
+ {
+   "CategoryID": 69,
+   "Name": "Phosphate-1",
+   "Function": "Inorganic phosphate sensing, transport, and production",
+   "Regulator": "PhoB",
+   "GeneCount": 8
+ },
+ {
+   "CategoryID": 70,
+   "Name": "Salicylic Acid",
+   "Function": "Salicylic acid efflux",
+   "Regulator": "Unknown",
+   "GeneCount": 9
+ },
+ {
+   "CategoryID": 71,
+   "Name": "ymgI",
+   "Function": "Unknown",
+   "Regulator": "Unknown",
+   "GeneCount": 4
+ },
+ {
+   "CategoryID": 72,
+   "Name": "Galactose",
+   "Function": "Galactose transport and catabolism",
+   "Regulator": "RpoS and GalR and GalS and Crp",
+   "GeneCount": 10
+ },
+ {
+   "CategoryID": 73,
+   "Name": "trxC Del",
+   "Function": "Unknown",
+   "Regulator": "Unknown",
+   "GeneCount": 3
+ },
+ {
+   "CategoryID": 74,
+   "Name": "ArcA",
+   "Function": "Anaerobiosis; repression of aerobic growth genes during anaerobic growth",
+   "Regulator": "ArcA",
+   "GeneCount": 81
+ },
+ {
+   "CategoryID": 75,
+   "Name": "yceO",
+   "Function": "Unknown",
+   "Regulator": "Unknown",
+   "GeneCount": 1
+ },
+ {
+   "CategoryID": 76,
+   "Name": "Potassium",
+   "Function": "Potassium sensing and transport",
+   "Regulator": "KdpE",
+   "GeneCount": 5
+ },
+ {
+   "CategoryID": 77,
+   "Name": "ROS TALE Del-1",
+   "Function": "Unknown",
+   "Regulator": "Unknown",
+   "GeneCount": 14
+ },
+ {
+   "CategoryID": 78,
+   "Name": "cyoB/kdpE/qseB KO",
+   "Function": "cyoB/kdpE/qseF KO",
+   "Regulator": "Unknown",
+   "GeneCount": 8
+ },
+ {
+   "CategoryID": 79,
+   "Name": "Isc System",
+   "Function": "Iron-sulfur cluster biogenesis and insertion",
+   "Regulator": "ryhB or IscR",
+   "GeneCount": 11
+ },
+ {
+   "CategoryID": 80,
+   "Name": "Thiamine-2",
+   "Function": "Thiamine uptake and biosynthesis",
+   "Regulator": "Unknown",
+   "GeneCount": 6
+ },
+ {
+   "CategoryID": 81,
+   "Name": "crp KO-1",
+   "Function": "crp KO and compensatory regulatory changes",
+   "Regulator": "Unknown",
+   "GeneCount": 24
+ },
+ {
+   "CategoryID": 82,
+   "Name": "SSW SNPs",
+   "Function": "Unknown",
+   "Regulator": "Unknown",
+   "GeneCount": 89
+ },
+ {
+   "CategoryID": 83,
+   "Name": "yafF",
+   "Function": "Unknown",
+   "Regulator": "Unknown",
+   "GeneCount": 1
+ },
+ {
+   "CategoryID": 84,
+   "Name": "NtrC-2",
+   "Function": "Nitrogen assimilation, ammonium transport",
+   "Regulator": "NtrC and RpoN",
+   "GeneCount": 10
+ },
+ {
+   "CategoryID": 85,
+   "Name": "DNA Damage",
+   "Function": "SOS response to DNA damage or inhibition of DNA replication",
+   "Regulator": "LexA",
+   "GeneCount": 18
+ },
+ {
+   "CategoryID": 86,
+   "Name": "UC-3",
+   "Function": "Unknown",
+   "Regulator": "Unknown",
+   "GeneCount": 51
+ },
+ {
+   "CategoryID": 87,
+   "Name": "YieP",
+   "Function": "Cellular membrane synthesis and stress response, 3-hydroxypropanoate tolerance",
+   "Regulator": "YieP",
+   "GeneCount": 10
+ },
+ {
+   "CategoryID": 88,
+   "Name": "Nitrogen",
+   "Function": "Nitrogen metabolism under nitrogen limitation",
+   "Regulator": "Nac",
+   "GeneCount": 32
+ },
+ {
+   "CategoryID": 89,
+   "Name": "UC-6",
+   "Function": "Unknown",
+   "Regulator": "Unknown",
+   "GeneCount": 11
+ },
+ {
+   "CategoryID": 90,
+   "Name": "Leu/Val/Ile",
+   "Function": "Branched-chain amino acid biosynthesis",
+   "Regulator": "Lrp and IHF and Ile-tRNA and Leu-tRNA and Val-tRNA and ppGpp",
+   "GeneCount": 11
+ },
+ {
+   "CategoryID": 91,
+   "Name": "NDH-1",
+   "Function": "NADH:ubiquinone oxidoreductase I: electron transfer from NADH to quinone pool, proton electrochemical gradient generation for aerobic and anaerobic respiration",
+   "Regulator": "NarL and ArcA and IHF and Fnr and Fis and ryhB",
+   "GeneCount": 12
+ },
+ {
+   "CategoryID": 92,
+   "Name": "Crp-1",
+   "Function": "Miscellaneous carbon source metabolism",
+   "Regulator": "Crp",
+   "GeneCount": 61
+ },
+ {
+   "CategoryID": 93,
+   "Name": "yneP",
+   "Function": "Unknown",
+   "Regulator": "Unknown",
+   "GeneCount": 6
+ },
+ {
+   "CategoryID": 94,
+   "Name": "NtrC-1",
+   "Function": "Nitrogen assimilation, ammonium transport",
+   "Regulator": "RpoN and RpoS and NtrC",
+   "GeneCount": 18
+ },
+ {
+   "CategoryID": 95,
+   "Name": "Ribose",
+   "Function": "Ribose transport and catabolism",
+   "Regulator": "dsrA and Crp and RbsR",
+   "GeneCount": 5
+ },
+ {
+   "CategoryID": 96,
+   "Name": "Dipeptide",
+   "Function": "Dipeptide transport; flagellar biosynthesis",
+   "Regulator": "gcvB and IHF and Fnr",
+   "GeneCount": 8
+ },
+ {
+   "CategoryID": 97,
+   "Name": "Curli-1",
+   "Function": "Curli secretion and assembly",
+   "Regulator": "RpoS and FliZ and CpxR and CsgD and BtsR",
+   "GeneCount": 6
+ },
+ {
+   "CategoryID": 98,
+   "Name": "ymiB",
+   "Function": "Unknown",
+   "Regulator": "Unknown",
+   "GeneCount": 1
+ },
+ {
+   "CategoryID": 99,
+   "Name": "yjjZ",
+   "Function": "Unknown",
+   "Regulator": "Unknown",
+   "GeneCount": 2
+ },
+ {
+   "CategoryID": 100,
+   "Name": "Molybdenum",
+   "Function": "Molybdenum transport and molybdoenzyme synthesis",
+   "Regulator": "Crp and FliA and ModE",
+   "GeneCount": 5
+ },
+ {
+   "CategoryID": 101,
+   "Name": "e14 Del",
+   "Function": "Unknown",
+   "Regulator": "Unknown",
+   "GeneCount": 14
+ },
+ {
+   "CategoryID": 102,
+   "Name": "Thr/Ser-1",
+   "Function": "Threonine/serine transport and catabolism during anaerobiosis",
+   "Regulator": "TdcA and TdcR and IHF and Fnr and Crp",
+   "GeneCount": 16
+ },
+ {
+   "CategoryID": 103,
+   "Name": "Tryptophan",
+   "Function": "Tryptophan transport and biosynthesis",
+   "Regulator": "TrpR and Trp-tRNA",
+   "GeneCount": 8
+ },
+ {
+   "CategoryID": 104,
+   "Name": "FHL",
+   "Function": "Formate hydrogenlyase: hydrogen production during glucose fermentation via formate oxidation/proton reduction",
+   "Regulator": "RpoN and NsrR and ModE and IHF and FhlA",
+   "GeneCount": 7
+ },
+ {
+   "CategoryID": 105,
+   "Name": "Glycine",
+   "Function": "Glycine cleavage system",
+   "Regulator": "PurR and Fnr and ppGpp and Crp and Lrp and GcvA",
+   "GeneCount": 5
+ },
+ {
+   "CategoryID": 106,
+   "Name": "BW25113",
+   "Function": "Accounts for genomic differences between BW25113 and MG1655 substrains",
+   "Regulator": "Unknown",
+   "GeneCount": 26
+ },
+ {
+   "CategoryID": 107,
+   "Name": "ypjJ",
+   "Function": "Unknown",
+   "Regulator": "Unknown",
+   "GeneCount": 7
+ },
+ {
+   "CategoryID": 108,
+   "Name": "PaaX",
+   "Function": "Phenylacetic acid transport and catabolism",
+   "Regulator": "Crp and IHF and PaaX and SlyA",
+   "GeneCount": 9
+ },
+ {
+   "CategoryID": 109,
+   "Name": "Flagella",
+   "Function": "Flagellar biosynthesis",
+   "Regulator": "Unknown",
+   "GeneCount": 4
+ },
+ {
+   "CategoryID": 110,
+   "Name": "SCFA",
+   "Function": "Short-chain fatty acid (acetoacetate) transport and catabolism",
+   "Regulator": "RpoN and AtoC and IHF",
+   "GeneCount": 4
+ },
+ {
+   "CategoryID": 111,
+   "Name": "YgeV",
+   "Function": "Nucleoside degradation activated by ethanol treatment",
+   "Regulator": "YgeV",
+   "GeneCount": 13
+ },
+ {
+   "CategoryID": 112,
+   "Name": "pts ALE",
+   "Function": "ptsHIcrr KO and associated adaptive regulatory changes",
+   "Regulator": "Unknown",
+   "GeneCount": 37
+ },
+ {
+   "CategoryID": 113,
+   "Name": "FDH-O",
+   "Function": "Formate dehydrogenase O; formate to carbon dioxide oxidation; formate-nitrate electron transport during aerobic/anerobic shift",
+   "Regulator": "SdhX",
+   "GeneCount": 7
+ },
+ {
+   "CategoryID": 114,
+   "Name": "GlcNAc",
+   "Function": "Amino sugar transport, biosynthesis and catabolism",
+   "Regulator": "NagC and Crp",
+   "GeneCount": 17
+ },
+ {
+   "CategoryID": 115,
+   "Name": "YgbI",
+   "Function": "Tartrate transport and catabolism",
+   "Regulator": "YgbI",
+   "GeneCount": 10
+ },
+ {
+   "CategoryID": 116,
+   "Name": "Lysine/T2SS",
+   "Function": "Lysine transport and biosynthesis; type II secretion system",
+   "Regulator": "ArgP",
+   "GeneCount": 27
+ },
+ {
+   "CategoryID": 117,
+   "Name": "Fnr-3",
+   "Function": "Anaerobic growth",
+   "Regulator": "Fnr",
+   "GeneCount": 33
+ },
+ {
+   "CategoryID": 118,
+   "Name": "ythA",
+   "Function": "Unknown",
+   "Regulator": "Unknown",
+   "GeneCount": 3
+ },
+ {
+   "CategoryID": 119,
+   "Name": "entC/ubiC KO-1",
+   "Function": "entC/ubiC KO and compensatory sad up-regulation",
+   "Regulator": "Unknown",
+   "GeneCount": 6
+ },
+ {
+   "CategoryID": 120,
+   "Name": "yoaI",
+   "Function": "Unknown",
+   "Regulator": "Unknown",
+   "GeneCount": 1
+ },
+ {
+   "CategoryID": 121,
+   "Name": "Gluconate",
+   "Function": "Gluconate transport and catabolism (Entner-Doudoroff)",
+   "Regulator": "GntR and Crp",
+   "GeneCount": 12
+ },
+ {
+   "CategoryID": 122,
+   "Name": "UC-9",
+   "Function": "Unknown",
+   "Regulator": "Unknown",
+   "GeneCount": 10
+ },
+ {
+   "CategoryID": 123,
+   "Name": "Copper",
+   "Function": "Copper/silver sensing and export",
+   "Regulator": "CusR or CueR or HprR",
+   "GeneCount": 11
+ },
+ {
+   "CategoryID": 124,
+   "Name": "Thr/Ser-2",
+   "Function": "Threonine/serine transport and catabolism",
+   "Regulator": "Fnr and Crp and IHF and TdcA and TdcR",
+   "GeneCount": 5
+ },
+ {
+   "CategoryID": 125,
+   "Name": "Membrane",
+   "Function": "Membrane-related stress response regulators, transporters, multidrug resistance",
+   "Regulator": "Unknown",
+   "GeneCount": 33
+ },
+ {
+   "CategoryID": 126,
+   "Name": "Thiamine-1",
+   "Function": "Thiamine uptake and biosynthesis",
+   "Regulator": "Thiamine diphosphate",
+   "GeneCount": 9
+ },
+ {
+   "CategoryID": 127,
+   "Name": "Cold Shock",
+   "Function": "Cold shock proteins",
+   "Regulator": "Unknown",
+   "GeneCount": 15
+ },
+ {
+   "CategoryID": 128,
+   "Name": "FliA",
+   "Function": "Sigma 28; flagellum biosynthesis and export, motility",
+   "Regulator": "FliA",
+   "GeneCount": 37
+ },
+ {
+   "CategoryID": 129,
+   "Name": "Pyruvate-1",
+   "Function": "Pyruvate sensing, transport, and catabolism under nutrient limitation",
+   "Regulator": "BtsR",
+   "GeneCount": 6
+ },
+ {
+   "CategoryID": 130,
+   "Name": "ldrD",
+   "Function": "Unknown",
+   "Regulator": "Unknown",
+   "GeneCount": 4
+ },
+ {
+   "CategoryID": 131,
+   "Name": "efeU Activation",
+   "Function": "efeU re-activation and associated efeU ALE-related expression changes",
+   "Regulator": "Unknown",
+   "GeneCount": 9
+ },
+ {
+   "CategoryID": 132,
+   "Name": "rcsB KO",
+   "Function": "rcsB KO and associated regulatory changes",
+   "Regulator": "Unknown",
+   "GeneCount": 8
+ },
+ {
+   "CategoryID": 133,
+   "Name": "malE OE",
+   "Function": "Accounts for malE plasmid overexpression",
+   "Regulator": "Unknown",
+   "GeneCount": 3
+ },
+ {
+   "CategoryID": 134,
+   "Name": "Crp-2",
+   "Function": "Carbohydrate transport and catabolism",
+   "Regulator": "Crp",
+   "GeneCount": 21
+ },
+ {
+   "CategoryID": 135,
+   "Name": "Cysteine-1",
+   "Function": "Cysteine biosynthesis, sulfate assimilation",
+   "Regulator": "CysB",
+   "GeneCount": 32
+ },
+ {
+   "CategoryID": 136,
+   "Name": "Pyruvate-2",
+   "Function": "Pyruvate sensing and transport",
+   "Regulator": "PyrR",
+   "GeneCount": 1
+ },
+ {
+   "CategoryID": 137,
+   "Name": "Phosphate-2",
+   "Function": "Inorganic phosphate sensing, transport, and production",
+   "Regulator": "PhoB",
+   "GeneCount": 20
+ },
+ {
+   "CategoryID": 138,
+   "Name": "Leucine",
+   "Function": "Leucine biosynthesis",
+   "Regulator": "LeuO and Leu-tRNA and ppGpp",
+   "GeneCount": 5
+ },
+ {
+   "CategoryID": 139,
+   "Name": "Capsule",
+   "Function": "Colanic acid capsule synthesis and transport; periplasmic proteins; envelope stress response",
+   "Regulator": "RcsAB",
+   "GeneCount": 38
+ },
+ {
+   "CategoryID": 140,
+   "Name": "ytiC",
+   "Function": "Unknown",
+   "Regulator": "Unknown",
+   "GeneCount": 2
+ },
+ {
+   "CategoryID": 141,
+   "Name": "ROS TALE Del-2",
+   "Function": "Unknown",
+   "Regulator": "Unknown",
+   "GeneCount": 9
+ },
+ {
+   "CategoryID": 142,
+   "Name": "UC-5",
+   "Function": "Unknown",
+   "Regulator": "Unknown",
+   "GeneCount": 15
+ },
+ {
+   "CategoryID": 143,
+   "Name": "FlhDC-1",
+   "Function": "Flagellum biosynthesis and export",
+   "Regulator": "FlhDC",
+   "GeneCount": 32
+ },
+ {
+   "CategoryID": 144,
+   "Name": "Putrescine",
+   "Function": "Putrescine transport and catabolism",
+   "Regulator": "RpoS and ArcA and PuuR",
+   "GeneCount": 8
+ },
+ {
+   "CategoryID": 145,
+   "Name": "ppGpp",
+   "Function": "Stringent response",
+   "Regulator": "ppGpp",
+   "GeneCount": 70
+ },
+ {
+   "CategoryID": 146,
+   "Name": "Glycolate",
+   "Function": "Glycolate/glyoxylate tranport and catabolism",
+   "Regulator": "IHF and ArcA and PdhR and GlcC",
+   "GeneCount": 6
+ },
+ {
+   "CategoryID": 147,
+   "Name": "PAL 26 Del",
+   "Function": "Unknown",
+   "Regulator": "Unknown",
+   "GeneCount": 43
+ },
+ {
+   "CategoryID": 148,
+   "Name": "LPS",
+   "Function": "Lipopolysaccharide biosynthesis and export",
+   "Regulator": "Unknown",
+   "GeneCount": 43
+ },
+ {
+   "CategoryID": 149,
+   "Name": "Arginine",
+   "Function": "Arginine transport and biosynthesis",
+   "Regulator": "ArgR",
+   "GeneCount": 24
+ },
+ {
+   "CategoryID": 150,
+   "Name": "Nickel/Cobalt",
+   "Function": "Nickel and cobalt resistance via efflux",
+   "Regulator": "RcnR",
+   "GeneCount": 2
+ },
+ {
+   "CategoryID": 151,
+   "Name": "IS5",
+   "Function": "IS5 transcripts",
+   "Regulator": "Unknown",
+   "GeneCount": 9
+ },
+ {
+   "CategoryID": 152,
+   "Name": "NtrC-3",
+   "Function": "Nitrogen assimilation, pyrimidine transport and catabolism",
+   "Regulator": "NtrC and RpoN",
+   "GeneCount": 20
+ },
+ {
+   "CategoryID": 153,
+   "Name": "arcA/luxS KO",
+   "Function": "arcA KO",
+   "Regulator": "Unknown",
+   "GeneCount": 2
+ },
+ {
+   "CategoryID": 154,
+   "Name": "sdh KO",
+   "Function": "sdh KO",
+   "Regulator": "Unknown",
+   "GeneCount": 5
+ },
+ {
+   "CategoryID": 155,
+   "Name": "YmfT",
+   "Function": "e14 prophage regulator activated by DNA damage",
+   "Regulator": "YmfT",
+   "GeneCount": 15
+ },
+ {
+   "CategoryID": 156,
+   "Name": "Fnr-2",
+   "Function": "Transition from aerobic to anaerobic growth; global control of anaerobiosis",
+   "Regulator": "Fnr",
+   "GeneCount": 62
+ },
+ {
+   "CategoryID": 157,
+   "Name": "Microaerobic",
+   "Function": "Hydrogenase 1 and cytochrome bd-II ubiquinol oxidase: microaerobic respiratory chain between hydrogen and oxygen",
+   "Regulator": "RpoS and Fis and NarP and NarL and AppY and YdeO and ArcA and IscR",
+   "GeneCount": 6
+ },
+ {
+   "CategoryID": 158,
+   "Name": "Cysteine-2",
+   "Function": "Cysteine biosynthesis, sulfate assimilation",
+   "Regulator": "CysB",
+   "GeneCount": 9
+ },
+ {
+   "CategoryID": 159,
+   "Name": "ydfW",
+   "Function": "Unknown",
+   "Regulator": "Unknown",
+   "GeneCount": 3
+ },
+ {
+   "CategoryID": 160,
+   "Name": "YcjW",
+   "Function": "Carbohydrate transport and catabolism",
+   "Regulator": "YcjW",
+   "GeneCount": 17
+ },
+ {
+   "CategoryID": 161,
+   "Name": "PAL Amp",
+   "Function": "Unknown",
+   "Regulator": "Unknown",
+   "GeneCount": 88
+ },
+ {
+   "CategoryID": 162,
+   "Name": "Propionate",
+   "Function": "Propionate catabolism; 2-methylcitric acid cycle",
+   "Regulator": "PrpR and RpoN and Cra and Crp",
+   "GeneCount": 4
+ },
+ {
+   "CategoryID": 163,
+   "Name": "CP4-44",
+   "Function": "CP4-44 prophage expression variation",
+   "Regulator": "Unknown",
+   "GeneCount": 4
+ },
+ {
+   "CategoryID": 164,
+   "Name": "minicoli KOs",
+   "Function": "Deletions from minicoli strain",
+   "Regulator": "Unknown",
+   "GeneCount": 115
+ },
+ {
+   "CategoryID": 165,
+   "Name": "GadXW",
+   "Function": "Glutamate-dependent acid resistance system; multidrug efflux",
+   "Regulator": "GadX and GadW",
+   "GeneCount": 19
+ },
+ {
+   "CategoryID": 166,
+   "Name": "Rhamnose",
+   "Function": "Rhamnose transport and catabolism",
+   "Regulator": "Crp and RhaS",
+   "GeneCount": 8
+ },
+ {
+   "CategoryID": 167,
+   "Name": "UC-2",
+   "Function": "Unknown",
+   "Regulator": "Unknown",
+   "GeneCount": 96
+ },
+ {
+   "CategoryID": 168,
+   "Name": "ydfB",
+   "Function": "Unknown",
+   "Regulator": "Unknown",
+   "GeneCount": 1
+ },
+ {
+   "CategoryID": 169,
+   "Name": "NrdR",
+   "Function": "Ribonucleoside reduction",
+   "Regulator": "NrdR",
+   "GeneCount": 7
+ },
+ {
+   "CategoryID": 170,
+   "Name": "Purine",
+   "Function": "Purine transport and biosynthesis",
+   "Regulator": "PurR and ppGpp",
+   "GeneCount": 22
+ },
+ {
+   "CategoryID": 171,
+   "Name": "cyoB/ndh/nuoB KO-1",
+   "Function": "NDH-1 (nuoB) KO and compensatory NDH-2 (ndh) up-regulation",
+   "Regulator": "Unknown",
+   "GeneCount": 3
+ },
+ {
+   "CategoryID": 172,
+   "Name": "Fimbriae",
+   "Function": "Type 1 (mannose-sensitive) pili/fimbriae biosynthesis and secretion",
+   "Regulator": "QseB and IHF and Lrp and H-NS",
+   "GeneCount": 8
+ },
+ {
+   "CategoryID": 173,
+   "Name": "IS Elements-1",
+   "Function": "Unknown",
+   "Regulator": "Unknown",
+   "GeneCount": 24
+ },
+ {
+   "CategoryID": 174,
+   "Name": "Cra",
+   "Function": "Central carbon metabolism; glycolytic flux-dependent regulation via fructose sensing",
+   "Regulator": "Cra",
+   "GeneCount": 17
+ },
+ {
+   "CategoryID": 175,
+   "Name": "Hot TALE 16",
+   "Function": "Regulatory changes under high temperature",
+   "Regulator": "Unknown",
+   "GeneCount": 17
+ },
+ {
+   "CategoryID": 176,
+   "Name": "Suf System",
+   "Function": "Iron-sulfur cluster biosynthesis and insertion",
+   "Regulator": "NsrR and IHF and IscR and OxyR and Fur and ppGpp",
+   "GeneCount": 6
+ },
+ {
+   "CategoryID": 177,
+   "Name": "PlaR",
+   "Function": "Plant-derived sugars transport and catabolism",
+   "Regulator": "PlaR and RpoE and Crp and IHF",
+   "GeneCount": 10
+ },
+ {
+   "CategoryID": 178,
+   "Name": "NO Stress",
+   "Function": "Nitric oxide sensing and detoxification, iron-sulfur cluster repair, anaerobic growth",
+   "Regulator": "NsrR or NarP",
+   "GeneCount": 11
+ },
+ {
+   "CategoryID": 179,
+   "Name": "Maltose",
+   "Function": "Maltose transport and catabolism",
+   "Regulator": "MalT",
+   "GeneCount": 9
+ },
+ {
+   "CategoryID": 180,
+   "Name": "Tyr/Trp/Phe",
+   "Function": "Aromatic amino acid biosynthesis and transport",
+   "Regulator": "TyrR or TrpR or Trp-tRNA",
+   "GeneCount": 12
+ },
+ {
+   "CategoryID": 181,
+   "Name": "GadX",
+   "Function": "Glutamate-dependent acid resistance system; multidrug efflux",
+   "Regulator": "RpoS and GadX",
+   "GeneCount": 9
+ },
+ {
+   "CategoryID": 182,
+   "Name": "Fatty Acid",
+   "Function": "Fatty acid degradation and biosynthesis",
+   "Regulator": "FadR",
+   "GeneCount": 7
+ },
+ {
+   "CategoryID": 183,
+   "Name": "DhaR",
+   "Function": "Dihydroxyacetone transport and catabolism; phosphotransferase activity for DhaM phosphorylation",
+   "Regulator": "DhaR",
+   "GeneCount": 13
+ },
+ {
+   "CategoryID": 184,
+   "Name": "pts KO",
+   "Function": "ptsHI/crr KO and compensatory regulatory changes",
+   "Regulator": "Unknown",
+   "GeneCount": 13
+ },
+ {
+   "CategoryID": 185,
+   "Name": "gcvB",
+   "Function": "Amino acid transport",
+   "Regulator": "gcvB",
+   "GeneCount": 76
+ },
+ {
+   "CategoryID": 186,
+   "Name": "Glutarate",
+   "Function": "Glutarate/aminobutyrate transport and catabolism",
+   "Regulator": "RpoS and H-NS and Crp and Lrp and GlaR and ppGpp",
+   "GeneCount": 5
+ },
+ {
+   "CategoryID": 187,
+   "Name": "entC/ubiC KO-2",
+   "Function": "entC/ubiC KO and compensatory sad up-regulation",
+   "Regulator": "Unknown",
+   "GeneCount": 5
+ },
+ {
+   "CategoryID": 188,
+   "Name": "Oxidoreductase",
+   "Function": "Putative oxidoreductase components",
+   "Regulator": "Unknown",
+   "GeneCount": 5
+ },
+ {
+   "CategoryID": 189,
+   "Name": "UC-7",
+   "Function": "Unknown",
+   "Regulator": "Unknown",
+   "GeneCount": 32
+ },
+ {
+   "CategoryID": 190,
+   "Name": "Efflux Pump",
+   "Function": "Multidrug/spermidine efflux pump",
+   "Regulator": "Unknown",
+   "GeneCount": 2
+ },
+ {
+   "CategoryID": 191,
+   "Name": "Tryptophanase",
+   "Function": "Tryptophan import and catabolism via tryptophanase; indole/pyruvate biosynthesis",
+   "Regulator": "Crp and TorR and Nac and L-tryptophan",
+   "GeneCount": 2
+ },
+ {
+   "CategoryID": 192,
+   "Name": "crp KO-2",
+   "Function": "crp KO and associated glycerol-3-phosphate (GlpR) regulatory changes",
+   "Regulator": "Unknown",
+   "GeneCount": 6
+ },
+ {
+   "CategoryID": 193,
+   "Name": "cyoB/ndh/nuoB KO-2",
+   "Function": "cyoB/ndh/nuoB KOs",
+   "Regulator": "Unknown",
+   "GeneCount": 9
+ },
+ {
+   "CategoryID": 194,
+   "Name": "tpiA KO",
+   "Function": "tpiA KO and compensatory evolved regulatory changes",
+   "Regulator": "Unknown",
+   "GeneCount": 10
+ },
+ {
+   "CategoryID": 195,
+   "Name": "Phage Shock",
+   "Function": "Phage shock response; response to filamentous phage infection and/or extracytoplasmic shock",
+   "Regulator": "RpoN and IHF and PspF",
+   "GeneCount": 6
+ },
+ {
+   "CategoryID": 196,
+   "Name": "Glyoxylate",
+   "Function": "Glyxoylate cycle; alternate to TCA cycle",
+   "Regulator": "Crp and ArcA and ppGpp and Cra and IclR and IHF",
+   "GeneCount": 3
+ },
+ {
+   "CategoryID": 197,
+   "Name": "CCK-PGI Del",
+   "Function": "Unknown",
+   "Regulator": "Unknown",
+   "GeneCount": 15
+ },
+ {
+   "CategoryID": 198,
+   "Name": "Acetate",
+   "Function": "Acetate uptake and catabolism; aldehyde catabolism; acetate/ethanol detoxification at stationary phase",
+   "Regulator": "Unknown",
+   "GeneCount": 7
+ },
+ {
+   "CategoryID": 199,
+   "Name": "Ile/Val",
+   "Function": "Isoleucine and valine biosynthesis",
+   "Regulator": "Unknown",
+   "GeneCount": 4
+ },
+ {
+   "CategoryID": 200,
+   "Name": "UC-8",
+   "Function": "Unknown",
+   "Regulator": "Unknown",
+   "GeneCount": 9
+ }
+]
