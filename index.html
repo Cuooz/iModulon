@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UOOZ</title>
+    <!-- Bootstrap CSS 추가 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/randomcolor@0.5.4/randomColor.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        canvas {
+            width: 100%;
+            height: 80%;
+            margin-top: 40px;
+        }
+        input[type="text"] {
+            padding: 10px;
+            font-size: 16px;
+            margin: 20px;
+            border-radius: 5px;
+            border: 0px solid #ccc;
+            font-family: 'Roboto', Arial, sans-serif;
+            width: 30%;
+        }
+        h2 {
+            font-family: 'Pacifico', cursive;
+            font-weight: normal;
+            margin-top: 40px;
+            text-align: center;
+        }
+        #functions {
+            display: none;
+            position: absolute;
+            max-height: 200px;
+            overflow-y: auto;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 30%;
+        }
+        #functions option {
+            padding: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>How do E. coli work?</h2>
+        <input type="text" id="searchInput" class="form-control" placeholder="Search for a gene or category..." autocomplete="off">
+        <datalist id="functions"></datalist>
+        <canvas id="bubbleChart"></canvas>
+    </div>
+
+    <script>
+        const iMinfoUrl = 'https://raw.githubusercontent.com/Cuooz/iModulon/refs/heads/main/iMinfo.json';
+        const GeneinfoUrl = 'https://raw.githubusercontent.com/Cuooz/iModulon/refs/heads/main/Geneinfo.json';
+
+        async function fetchData() {
+            const iMinfoResponse = await fetch(iMinfoUrl);
+            const iMinfoData = await iMinfoResponse.json();
+
+            const GeneinfoResponse = await fetch(GeneinfoUrl);
+            const GeneinfoData = await GeneinfoResponse.json();
+
+            iMinfoData.forEach(category => {
+                category.genes = GeneinfoData.filter(gene => gene.CategoryID === category.CategoryID);
+            });
+
+            return iMinfoData;
+        }
+
+        function filterCategories(searchTerm, data) {
+            return data.filter(category => {
+                const categoryMatches = category.Name.toLowerCase().includes(searchTerm.toLowerCase()) || category.Function.toLowerCase().includes(searchTerm.toLowerCase());
+                const genesMatches = category.genes.some(gene => gene.Gene.toLowerCase().includes(searchTerm.toLowerCase()));
+                return categoryMatches || genesMatches;
+            });
+        }
+
+        function generateColor() {
+            return `hsl(${Math.random() * 360}, 70%, 60%)`;  // 세련된 색상: HSL 기반으로 색상 생성
+        }
+
+        async function createChart() {
+            const data = await fetchData();
+            let filteredData = data;
+
+            const ctx = document.getElementById('bubbleChart').getContext('2d');
+
+            // 캔버스 크기 동적으로 설정
+            const canvasWidth = window.innerWidth * 1.0;
+            const canvasHeight = window.innerHeight * 0.8;
+            document.getElementById('bubbleChart').width = canvasWidth;
+            document.getElementById('bubbleChart').height = canvasHeight;
+
+            const bubbleChart = new Chart(ctx, {
+                type: 'bubble',
+                data: {
+                    datasets: [{
+                        label: 'Independent Functional Modules',
+                        data: filteredData.map((category, index) => ({
+                            x: index + 1,
+                            y: category.GeneCount,
+                            r: Math.min(category.GeneCount * 0.5, 70) // GeneCount에 비례한 반지름
+                        })),
+                        backgroundColor: filteredData.map(() => generateColor()), // 랜덤 색상
+                        borderColor: filteredData.map(() => 'rgba(0, 0, 0, 0)'),
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    scales: {
+                        x: {
+                            title: {
+                                display: true,
+                                text: 'Category No.',
+                                font: {
+                                    size: 25 // X축 폰트 크기
+                                }
+                            },
+                            max: 200
+                        },
+                        y: {
+                            title: {
+                                display: true,
+                                text: 'Gene Count',
+                                font: {
+                                    size: 25 // Y축 폰트 크기
+                                }
+                            },
+                            beginAtZero: true
+                        }
+                    },
+                    plugins: {
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    const categoryIndex = context.dataIndex;
+                                    const category = filteredData[categoryIndex];
+                                    return `Name: ${category.Name}\nFunction: ${category.Function}\nGene Count: ${category.GeneCount}`;
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+
+            document.getElementById('bubbleChart').onclick = function(evt) {
+                const activePoints = bubbleChart.getElementsAtEventForMode(evt, 'nearest', { intersect: true }, false);
+                if (activePoints.length > 0) {
+                    const clickedIndex = activePoints[0].index;
+                    const selectedCategory = filteredData[clickedIndex];
+
+                    const newTab = window.open("", "_blank");
+                    newTab.document.write(`
+                        <html>
+                            <head>
+                                <title>Category Information</title>
+                            </head>
+                            <body>
+                                <h2>${selectedCategory.Name}</h2>
+                                <p>${selectedCategory.Function}</p>
+                                <ul>
+                                    ${selectedCategory.genes.map(gene => `
+                                        <li><strong>${gene.Gene}</strong>: ${gene.Protein}, GOG: ${gene.GOG}, Locus: ${gene.GeneLocus}</li>
+                                    `).join('')}
+                                </ul>
+                            </body>
+                        </html>
+                    `);
+                }
+            };
+
+            document.getElementById('searchInput').addEventListener('input', function() {
+                const searchTerm = this.value;
+                filteredData = filterCategories(searchTerm, data);
+                bubbleChart.data.datasets[0].data = filteredData.map((category, index) => ({
+                    x: index + 1,
+                    y: category.GeneCount,
+                    r: Math.min(category.GeneCount * 0.5, 30)
+                }));
+                bubbleChart.update();
+
+                // 드롭다운 업데이트
+                const datalist = document.getElementById('functions');
+                datalist.innerHTML = '';
+                const filteredFunctions = filteredData.map(category => category.Function);
+                filteredFunctions.forEach(func => {
+                    const option = document.createElement('option');
+                    option.value = func;
+                    datalist.appendChild(option);
+                });
+            });
+        }
+
+        createChart();
+    </script>
+
+    <!-- Bootstrap JS, Popper.js 추가 -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
